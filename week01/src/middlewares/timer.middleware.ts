@@ -1,3 +1,5 @@
+import { Request, Response, NextFunction } from "express";
+
 // 요청 시간을 측정하여 로그에 출력하는 미들웨어
 export const timerMiddleware = (
   req: Request,
