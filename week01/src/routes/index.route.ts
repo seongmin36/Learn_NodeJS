@@ -35,4 +35,9 @@ router.get("/error-test", (_req, res, next) => {
   next(new Error("강제 에러 발생"));
 });
 
+// next() 안 부르면 왜 멈추는지 테스트
+router.get("/hang-test", (_req, _res, _next) => {
+  console.log("여기까진 옴");
+});
+
 export default router;
