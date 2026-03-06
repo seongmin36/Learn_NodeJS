@@ -1,10 +1,10 @@
 import dotenv from "dotenv";
 import express from "express";
 import indexRouter from "./routes/index.route.js";
-import { loggerMiddleware } from "./middlewares/loggerMiddleware.js";
-import { timerMiddleware } from "./middlewares/timerMiddleware.js";
-import { notFoundMiddleware } from "./middlewares/notFoundMiddleware.js";
-import { errorMiddleware } from "./middlewares/errorMiddleware.js";
+import { loggerMiddleware } from "./middlewares/logger.middleware.js";
+import { timerMiddleware } from "./middlewares/timer.middleware.js";
+import { notFoundMiddleware } from "./middlewares/not-found.middleware.js";
+import { errorMiddleware } from "./middlewares/error.middleware.js";
 
 dotenv.config();
 
