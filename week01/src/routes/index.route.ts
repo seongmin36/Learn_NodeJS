@@ -22,7 +22,7 @@ router.get(
     console.log("next() 전에 라우터 실행됨");
     next();
   },
-  (_req, _res) => {
+  (_req, res) => {
     res.status(200).json({
       ok: true,
       message: "next() 작동하네요",
